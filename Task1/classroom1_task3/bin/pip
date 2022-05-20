@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/almazabdysalamov/Desktop/bootcamp/Muhammed Task1/classroom1_task3/Task1/classroom1_task3/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
